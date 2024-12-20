@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #f5f7fa;
+}
+
+.main.sidebarWrapper {height: 100vh;}
+.main .sidebarWrapper .sidebar{height: 100vh;background-color: #fff;}
+.main .sidebarWrapper .sidebar .sidebarTabs button{
+  justify-content: flex-start;
+  color: #b1b1b1;
+  /* color: #232323; */
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  align-items: center;
+  gap: 14px;
+  margin: 10px 0;
+}
+.main .sidebarWrapper .sidebar .sidebarTabs button svg {
+  font-size: 20px;
+}
+
+.main .sidebarWrapper .sidebar .sidebarTabs button.active{
+  color: #232323
+}
