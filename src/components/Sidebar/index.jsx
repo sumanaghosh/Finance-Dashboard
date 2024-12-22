@@ -76,7 +76,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             <Link to={menu?.route} key={index}>
               <button className={`w-full flex items-center px-4 py-2 mt-2 rounded-md ${activeMenu === index ? "active" : ""
                 }
-                `} onClick={() => handleActiveMenu(index)}>
+                `} onClick={() => handleActiveMenu(index, menu.title)}>
                 <span className='icon w-[25px] h-[25px] flex items-center justify-center rounded-md'>
                   {activeMenu === index ? <img src={menu?.imageSelect} alt='home icon' /> : <img src={menu?.image} alt='home icon' />}</span>{" "}{menu?.title}
               </button>
