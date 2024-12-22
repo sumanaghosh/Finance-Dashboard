@@ -23,10 +23,8 @@ const profileData = createSlice({
   reducers: {
     // Action to update specific profile fields
     updateProfile: (state, action) => {
-      console.log('Updating profile with:', action.payload);
       const updatedState = { ...state, ...action.payload };
       sessionStorage.setItem("profileFormData", JSON.stringify(updatedState)); // Save to sessionStorage
-      console.log('State after update:', updatedState);
       return updatedState; // Return the new state
     },
   },

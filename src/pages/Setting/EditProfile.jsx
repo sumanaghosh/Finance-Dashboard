@@ -30,7 +30,6 @@ function EditProfile() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Updated Profile:", formData);
     dispatch(updateProfile(formData));
     alert("Profile saved successfully!");
   };

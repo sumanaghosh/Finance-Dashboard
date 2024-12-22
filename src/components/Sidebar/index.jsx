@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Logo from '../../assets/Logo.svg'
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
@@ -14,6 +14,7 @@ import privillege from '../../assets/icons/privillege.svg'
 import settings from '../../assets/icons/settings.svg'
 import selectedSettings from '../../assets/icons/Selected Icon/settings.svg';
 import { IoIosCloseCircle } from "react-icons/io";
+import { SidebarContext } from '../ContextApi/AppContext';
 
 
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
@@ -29,12 +30,13 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
     { route: '/setting', imageSelect: selectedSettings, image: settings, title: "Setting" }
   ];
   const [activeMenu, setActiveMenu] = useState(0);
+  const { setSidebarData } = useContext(SidebarContext);
 
-  const handleActiveMenu = (index) => {
+  const handleActiveMenu = (index, title) => {
     setActiveMenu(index);
     setIsSidebarOpen(false);
+    setSidebarData(title);
   }
-  console.log("isSidebarOpen", isSidebarOpen)
 
   return (
     <>
@@ -49,9 +51,9 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             <Link to={menu?.route} key={index}>
               <button className={`w-full flex items-center px-4 py-2 mt-2 rounded-md ${activeMenu === index ? "active" : ""
                 }
-                `} onClick={() => handleActiveMenu(index)}>
+                `} onClick={() => handleActiveMenu(index, menu.title)}>
                 <span className='icon w-[25px] h-[25px] flex items-center justify-center rounded-md'>
-                  {activeMenu === index ? <img src={menu?.imageSelect} alt='home icon' /> : <img src={menu?.image} alt='home icon' />}</span>{" "}{menu?.title}
+                  {activeMenu === index ? <img src={menu?.imageSelect} alt='icon' /> : <img src={menu?.image} alt='icon' />}</span>{" "}{menu?.title}
               </button>
             </Link>
           )}
