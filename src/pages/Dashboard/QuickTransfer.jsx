@@ -51,7 +51,7 @@ function QuickTransfer() {
   return (
     <>
       <h2 className="text-base md:text-[22px] text-customBlack font-semibold font-inter mt-[16px] md:mt-[0] mb-[16px] md:mb-4">Quick Transfer</h2>
-      <div className='bg-white w-[314px] md:w-[445px] h-[195px] md:h-[276px] rounded-[15px] md:rounded-3xl relative'>
+      <div className='bg-white w-full md:w-[445px] h-[195px] md:h-[276px] rounded-[15px] md:rounded-3xl relative'>
         <div className="py-[.5rem] md:py-10 px-[15px] md:px-[30px] max-w-md mx-auto">
           <div className="flex overflow-x-auto hide-scrollbar space-x-4 pb-4 md:pb-4 w-[247px] md:w-[335px]" ref={scrollContainer}>
             {listOfMember.map((list) =>

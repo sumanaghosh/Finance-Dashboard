@@ -63,7 +63,7 @@ function ExpenseStatistics() {
   return (
     <>
       <h2 className="text-base md:text-[22px] text-customBlack font-semibold font-inter mt-[16px] md:mt-[0] mb-[16px] md:mb-4">Expense Statistics</h2>
-      <div className="w-[314px] md:w-[350px] h-[240px] md:h-[322px] p-0 md:p-[1.5rem] bg-white rounded-[15px] md:rounded-3xl flex justify-center">
+      <div className="w-full md:w-[350px] h-[240px] md:h-[322px] p-0 md:p-[1.5rem] bg-white rounded-[15px] md:rounded-3xl flex justify-center">
         <Pie data={data} options={options} width={350} height={322} />
       </div>
     </>

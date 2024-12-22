@@ -7,7 +7,7 @@ function RecentTransaction() {
   return (
     <>
       <p className='text-base md:text-[22px] text-customBlack font-semibold font-inter mt-[16px] md:mt-[0] mb-[16px] md:mb-4'>Recent Transaction</p>
-      <div className='bg-white w-[308px] md:w-[350px] h-[214px] md:h-[235px] rounded-[15px] md:rounded-3xl p-[1rem] md:p-6'>
+      <div className='bg-white w-full md:w-[350px] h-[214px] md:h-[235px] rounded-[15px] md:rounded-3xl p-[1rem] md:p-6'>
         <div className='flex items-center justify-between'>
           <div className='flex gap-3'>
             <div className='bg-[#FFF5D9] rounded-full w-[50px] md:w-14 h-[50px] md:h-14 flex justify-center items-center'>
