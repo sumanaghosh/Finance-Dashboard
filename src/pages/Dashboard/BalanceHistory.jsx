@@ -89,8 +89,8 @@ function BalanceHistory() {
 
   return (
     <>
-      <h2 className="text-[22px] text-customBlack font-semibold font-inter mb-4">Balance History</h2>
-      <div className='bg-white w-[635px] h-[276px] rounded-3xl'>
+      <h2 className="text-base md:text-[22px] text-customBlack font-semibold font-inter mt-[16px] md:mt-[0] mb-[16px] md:mb-4">Balance History</h2>
+      <div className='bg-white w-[320px] md:w-[635px] h-[266px] md:h-[276px] rounded-[15px] md:rounded-3xl'>
         <div className='w-[100%] h-[276px] p-3'>
           <Line data={data} options={options}
           />

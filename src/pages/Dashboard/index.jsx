@@ -9,7 +9,7 @@ import BalanceHistory from './BalanceHistory'
 function Dashboard() {
   return (
     <>
-      <div className='flex gap-6 mb-5'>
+      <div className='block md:flex gap-6 md-[0] md:mb-[1.25rem]'>
         <div>
           <MyCard />
         </div>
@@ -17,7 +17,7 @@ function Dashboard() {
           <RecentTransaction />
         </div>
       </div>
-      <div className='flex gap-6 mb-5'>
+      <div className='block md:flex gap-6 md-[0] md:mb-[1.25rem]'>
         <div>
           <WeeklyActivity />
         </div>
@@ -25,7 +25,7 @@ function Dashboard() {
           <ExpenseStatistics/>
         </div>
       </div>
-      <div className='flex gap-6 mb-5'>
+      <div className='block md:flex gap-6 md-[0] md:mb-[1.25rem]'>
         <div>
           <QuickTransfer />
         </div>
