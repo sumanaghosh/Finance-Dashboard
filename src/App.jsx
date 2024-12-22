@@ -9,7 +9,7 @@ import { SidebarContext } from './components/ContextApi/AppContext';
 const MyContext = createContext();
 
 function App() {
-  const [sidebarData, setSidebarData] = useState('');
+  const [sidebarData, setSidebarData] = useState('Overview');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   let pathLabel = window.location.pathname
 
@@ -23,7 +23,7 @@ function App() {
             </div>
             <div className="content_Right px-[8px] md:px-[16px] w-full md:w-[82%] ">
               <Header pathLabel={pathLabel} isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
-              <div className='mt-[4.5rem] md:mt-24'>
+              <div className='mt-[8.5rem] md:mt-24'>
                 <Routes>
                   <Route path="/" exact={true} element={<Dashboard />} />
                   <Route path="/setting" exact={true} element={<Setting />} />

@@ -25,13 +25,14 @@ function ExpenseStatistics() {
         ],
         // borderColor: ['#fff'],
         borderWidth: 2,
-        offset: [10,5,20,5],
+        offset: [0, 35, 20, 15],
       },
     ],
   };
 
   const options = {
     rotation: -(17 * Math.PI) / 1,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         display: false
@@ -39,17 +40,15 @@ function ExpenseStatistics() {
       datalabels: {
         color: '#fff', // Label text color
         font: {
-          weight: '700',
-          size: 16,
+          weight: '400',
+          size: window.innerWidth < 640 ? 12 : 16,
           family: 'Inter, sans-serif',
-          align: 'center'
         },
         formatter: (value, context) => {
           const label = context.chart.data.labels[context.dataIndex];
           return `${value}\n${label}%`;
         },
-        align: 'center',
-        anchor: 'left',
+        textAlign: "center",
       },
       tooltip: {
         enabled: false, // Show tooltips when hovering

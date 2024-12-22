@@ -42,17 +42,24 @@ export const Header = ({ pathLabel, isSidebarOpen, setIsSidebarOpen }) => {
               <input type='text' placeholder='Search for something' className='bg-customGray h-12 rounded-3xl px-5 outline-none' />
             </div>
             <Link to={'/setting'} onClick={() => setSidebarData('Setting')}>
-              <div className='hidden md:flex bg-customGray rounded-full h-14 w-14  justify-center items-center'>
+              <div className='hidden md:flex bg-customGray rounded-full h-14 w-14  justify-center items-center hover:shadow-xl transition duration-300'>
                 <IoSettingsOutline className='text-2xl text-customBlue' />
               </div>
             </Link>
-            <div className='hidden md:flex bg-customGray rounded-full h-14 w-14  justify-center items-center'>
+            <div className='hidden md:flex bg-customGray rounded-full h-14 w-14  justify-center items-center hover:shadow-xl transition duration-300'>
               <VscBellDot className='text-2xl text-customBlueDark' />
             </div>
             <div >
               <img src={profile.profileImage} alt='User Image' className='rounded-full w-[35px] md:w-[60px] h-[35px] md:h-[60px]' />
             </div>
           </div>
+        </div>
+
+        <div className="relative block md:hidden p-[.5rem] w-[325px] mx-auto my-0">
+          <FiSearch className='absolute 
+              left-0 top-1/2 transform -translate-y-1/2 translate-x-[1.5rem]
+               text-customBlue text-base' />
+          <input type='text' placeholder='Search for something' className='bg-customGray h-[40px] w-[325px] rounded-3xl px-[2.5rem] outline-none text-[13px]' />
         </div>
 
       </header>

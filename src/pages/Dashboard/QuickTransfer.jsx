@@ -71,7 +71,7 @@ function QuickTransfer() {
           {/* Scroll Button */}
           <button
             onClick={scrollNext}
-            className="absolute right-4 top-20 transform -translate-y-12 md:-translate-y-1/2 w-[40px] md:w-[50px] h-[40px] md:h-[50px] flex items-center justify-center bg-white shadow-md rounded-full">
+            className="absolute right-4 top-20 transform -translate-y-12 md:-translate-y-1/2 w-[40px] md:w-[50px] h-[40px] md:h-[50px] flex items-center justify-center bg-white shadow-md hover:shadow-lg transition duration-300 rounded-full">
             <MdOutlineKeyboardArrowRight className='text-[#718EBF] text-[32px] !important' />
           </button>
 
@@ -84,7 +84,7 @@ function QuickTransfer() {
                 placeholder="Write Amount"
                 className="w-[187px] md:w-[265px] h-[40px] md:h-[50px] bg-[#EDF1F7] px-[10px] md:px-[1.5rem] py-2 text-[#718EBF] text-xs md:text-base rounded-full focus:outline-none"
               />
-              <button className="flex items-center justify-center gap-2 bg-[#232323] text-white rounded-full text-[13px] md:text-base font-medium absolute top-0 right-0 h-[40px] md:h-[50px] w-[100px] md:w-[125px] font-inter">
+              <button className="flex items-center justify-center gap-2 bg-[#232323] text-white rounded-full text-[13px] md:text-base font-medium absolute top-0 right-0 h-[40px] md:h-[50px] w-[100px] md:w-[125px] font-inter hover:shadow-xl transition duration-300">
                 Send
                 <FaPaperPlane className='text-[13px] md:text-[26px]' />
 

@@ -50,8 +50,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           {listOfMenu?.map((menu, index) =>
             <Link to={menu?.route} key={index}>
               <button className={`w-full flex items-center px-4 py-2 mt-2 rounded-md ${activeMenu === index ? "active" : ""
-                }
-                `} onClick={() => handleActiveMenu(index, menu.title)}>
+                } hover:shadow-xl transition duration-300`} onClick={() => handleActiveMenu(index, menu.title)}>
                 <span className='icon w-[25px] h-[25px] flex items-center justify-center rounded-md'>
                   {activeMenu === index ? <img src={menu?.imageSelect} alt='icon' /> : <img src={menu?.image} alt='icon' />}</span>{" "}{menu?.title}
               </button>
@@ -75,8 +74,7 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           {listOfMenu?.map((menu, index) =>
             <Link to={menu?.route} key={index}>
               <button className={`w-full flex items-center px-4 py-2 mt-2 rounded-md ${activeMenu === index ? "active" : ""
-                }
-                `} onClick={() => handleActiveMenu(index, menu.title)}>
+                } hover:shadow-xl transition duration-300`} onClick={() => handleActiveMenu(index, menu.title)}>
                 <span className='icon w-[25px] h-[25px] flex items-center justify-center rounded-md'>
                   {activeMenu === index ? <img src={menu?.imageSelect} alt='home icon' /> : <img src={menu?.image} alt='home icon' />}</span>{" "}{menu?.title}
               </button>

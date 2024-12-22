@@ -79,7 +79,7 @@ function MyCard() {
     <>
       <div className='flex justify-between items-center mb-[1rem] md:mb-[1.25rem] text-customBlack font-inter'>
         <p className='text-base md:text-[22px] font-semibold'>My Cards</p>
-        <p className='text-sm md:text-base font-semibold'>See All</p>
+        <p className='text-sm md:text-base font-semibold hover:shadow-custom transition duration-300 cursor-pointer'>See All</p>
       </div>
       <div className='flex items-center gap-5 md:gap-9 font-lato overflow-x-auto hide-scrollbar scrollbar-hide'>
         {cardDetails?.map((card, index) =>

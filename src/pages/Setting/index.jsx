@@ -7,7 +7,7 @@ function Setting() {
   const [activeTab, setActiveTab] = useState("Edit Profile");
 
   return (
-    <div className='bg-white p-[1rem] pt-0 md:p-[30px] rounded-[25px]'>
+    <div className='bg-white p-[1rem] pt-0 md:p-[30px] rounded-[15px] md:rounded-[25px]'>
       <div className="flex space-x-4 border-b-2 mb-6">
         {["Edit Profile", "Preferences", "Security"].map((tab) => (
           <div>

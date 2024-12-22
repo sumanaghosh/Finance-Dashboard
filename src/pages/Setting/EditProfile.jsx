@@ -115,7 +115,7 @@ function EditProfile() {
           </div>
         </div>
         <div className='text-right mt-6'>
-          <button type='submit' className='text-center bg-[#232323] text-white text-[15px] md:text-[18px] font-medium font-inter rounded-[9px] md:rounded-[15px] w-full md:w-[190px] h-[40px] md:h-[50px]'>Save</button>
+          <button type='submit' className='text-center bg-[#232323] text-white text-[15px] md:text-[18px] font-medium font-inter rounded-[9px] md:rounded-[15px] w-full md:w-[190px] h-[40px] md:h-[50px] hover:shadow-xl transition duration-300'>Save</button>
         </div>
       </form>
     </div>
