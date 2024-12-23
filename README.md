@@ -1,4 +1,4 @@
-# Finance Dashboard
+# Finance Dashboard url(https://finance-dashboard-sumanaghoshs-projects.vercel.app/)
 
 A fully responsive and modern finance dashboard built with **Vite**, **React**, and **Redux**. This application includes various widgets and charts to visualize financial data and manage transactions efficiently.
 
