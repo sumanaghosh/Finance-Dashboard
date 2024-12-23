@@ -17,6 +17,16 @@ export default {
         lato: ['Lato', 'sans-serif'], // For Lato font
         inter: ['Inter', 'sans-serif'], // For Inter font
       },
+      animation: {
+        fadeIn: 'fadeIn 1s ease-in-out',
+        bounceText: 'bounce 2s infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
     },
   },
   plugins: [],

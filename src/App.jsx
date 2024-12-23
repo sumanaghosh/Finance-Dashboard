@@ -5,6 +5,7 @@ import { createContext, useState } from 'react';
 import { Header } from './components/Header';
 import Setting from './pages/Setting';
 import { SidebarContext } from './components/ContextApi/AppContext';
+import CommingSoon from './pages/CommingSoon';
 
 const MyContext = createContext();
 
@@ -26,6 +27,13 @@ function App() {
               <div className='mt-[8.5rem] md:mt-24'>
                 <Routes>
                   <Route path="/" exact={true} element={<Dashboard />} />
+                  <Route path="/transactions" exact={true} element={<CommingSoon />} />
+                  <Route path="/accounts" exact={true} element={<CommingSoon />} />
+                  <Route path="/investments" exact={true} element={<CommingSoon />} />
+                  <Route path="/credit-cards" exact={true} element={<CommingSoon />} />
+                  <Route path="/loans" exact={true} element={<CommingSoon />} />
+                  <Route path="/services" exact={true} element={<CommingSoon />} />
+                  <Route path="/my-privileges" exact={true} element={<CommingSoon />} />
                   <Route path="/setting" exact={true} element={<Setting />} />
                 </Routes>
               </div>
