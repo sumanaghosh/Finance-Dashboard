@@ -9,9 +9,11 @@ A fully responsive and modern finance dashboard built with **Vite**, **React**, 
 - **React Icons:** Clean and professional icons used for UI elements.
 
 **Dashbaord Desktop View**
+
 ![Finance Dashboard Screenshot](./src/assets/ss/dashboard_desktop.png)
 
 **Dashbaord Mobile View**
+
 ![Finance Dashboard Screenshot](./src/assets/ss/dashboard_mobile.png)
 
 ---
@@ -30,9 +32,11 @@ The Dashboard (Overview) provides users with a comprehensive summary of their fi
 
 
 **Setting Desktop View**
+
 ![Finance Dashboard Screenshot](./src/assets/ss/setting_desktop.png)
 
 **Setting Mobile View**
+
 ![Finance Dashboard Screenshot](./src/assets/ss/setting_mobile.png)
 
 ---
