@@ -38,8 +38,8 @@ A fully responsive and modern finance dashboard built with **Vite**, **React**, 
 - **Start the development server:** npm run dev
 - **Open your browser and navigate to:** http://localhost:5173
 
-Scripts
-npm run dev: Start the development server.
-npm run build: Build the project for production.
-npm run preview: Preview the production build locally.
+**Scripts**
+**npm run dev:** Start the development server.
+**npm run build:** Build the project for production.
+**npm run preview:** Preview the production build locally.
 
