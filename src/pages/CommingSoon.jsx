@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../src/assets/logo.svg'
+import Logo from '../assets/logo.svg';
 
 function CommingSoon() {
   return (
