@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 import Logo from '../../assets/Logo.svg'
 import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
 import Home from '../../assets/icons/home.svg';
 import SelectHome from '../../assets/icons/Selected Icon/home.svg';
 import transaction from '../../assets/icons/transaction.svg'
