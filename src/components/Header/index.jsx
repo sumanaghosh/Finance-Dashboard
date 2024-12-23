@@ -50,7 +50,7 @@ export const Header = ({ pathLabel, isSidebarOpen, setIsSidebarOpen }) => {
               <VscBellDot className='text-2xl text-customBlueDark' />
             </div>
             <div >
-              <img src={profile.profileImage} alt='User Image' className='rounded-full w-[35px] md:w-[60px] h-[35px] md:h-[60px]' />
+              <img src={profile.profileImage} alt='User Image' className='rounded-full w-[35px] md:w-[60px] h-[35px] md:h-[60px] object-cover' />
             </div>
           </div>
         </div>
