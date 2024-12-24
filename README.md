@@ -67,7 +67,7 @@ This component allows users to view and update their profile details, such as th
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/finance-dashboard.git
+   git clone https://github.com/sumanaghosh/Finance-Dashboard.git
    cd finance-dashboard
 ##
 - **Install dependencies:** npm install
